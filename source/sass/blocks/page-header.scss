@@ -1,0 +1,69 @@
+.page-header {
+  position: absolute;
+  width: 100%;
+}
+
+.page-header__wrapper {
+  margin: 0 auto;
+
+  padding-top: 30px;
+  width: 1160px;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+
+  @media (max-width: 1199px) {
+    width: 88.28%;
+    padding-top: 40px;
+  }
+
+  @media (max-width: 767px) {
+    width: 90.63%;
+    padding-top: 20px;
+  }
+}
+
+.page-header__wrapper img {
+  @media (max-width: 1199px) {
+    width: 80px;
+  }
+
+  @media (max-width: 767px) {
+    width: 68px;
+  }
+}
+
+a[href^="tel:"] {
+  align-self: end;
+  padding: 10px 20px 0;
+  margin-right: -20px;
+  margin-top: -10px;
+
+  font-family: "Bebas Neue", "Arial", sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  text-transform: uppercase;
+  line-height: 26px;
+  letter-spacing: 0.03em;
+  color: #ffffff;
+  cursor: pointer;
+
+  &:hover {
+    opacity: 0.5;
+  }
+
+  @media (max-width: 1199px) {
+    letter-spacing: 0;
+  }
+
+  @media (max-width: 767px) {
+    font-size: 20px;
+    line-height: 20px;
+    letter-spacing: 0.02em;
+
+    padding: 10px 10px 0;
+    margin-right: -10px;
+  }
+}

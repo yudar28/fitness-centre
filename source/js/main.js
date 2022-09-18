@@ -1,5 +1,7 @@
 import {iosVhFix} from './utils/ios-vh-fix';
 import {initModals} from './modules/modals/init-modals';
+import {addSmoothScroll} from './modules/modals/smoth-scroll';
+import {onClickTab} from './modules/modals/tabs';
 
 // ---------------------------------
 
@@ -19,6 +21,11 @@ window.addEventListener('DOMContentLoaded', () => {
     initModals();
   });
 });
+
+addSmoothScroll();
+
+onClickTab();
+
 
 // ---------------------------------
 
