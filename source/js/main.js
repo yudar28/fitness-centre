@@ -6,17 +6,7 @@ import {onClickTab} from './modules/modals/tabs';
 // ---------------------------------
 
 window.addEventListener('DOMContentLoaded', () => {
-
-  // Utils
-  // ---------------------------------
-
   iosVhFix();
-
-  // Modules
-  // ---------------------------------
-
-  // все скрипты должны быть в обработчике 'DOMContentLoaded', но не все в 'load'
-  // в load следует добавить скрипты, не участвующие в работе первого экрана
   window.addEventListener('load', () => {
     initModals();
   });
@@ -26,20 +16,53 @@ addSmoothScroll();
 
 onClickTab();
 
-// import Swiper bundle with all modules installed
-// import Swiper from 'https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.esm.browser.min.js';
+const swiper = new Swiper('.swiper', {
+  spaceBetween: 0,
+  loop: true,
+  simulateTouch: true,
 
-// const swiper = new Swiper('.swiper', {
-//   // Optional parameters
-//   direction: 'vertical',
-//   loop: true,
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
 
-//   // Navigation arrows
-//   navigation: {
-//     nextEl: '.swiper-button-next',
-//     prevEl: '.swiper-button-prev',
-//   },
-// });
+  hashNavigation: true,
+
+  keyboard: {
+    enabled: true,
+    onlyInViewport: false,
+  },
+
+  watchOverflow: true,
+  slidesPerView: 1,
+
+  // номер слайда с которого начинается слайдер
+  initialSlide: 2,
+
+  breakpoints: {
+    768: {
+      slidesPerView: 2,
+      spaceBetween: 30,
+    },
+
+    1200: {
+      slidesPerView: 4,
+      initialSlide: 0,
+      spaceBetween: 40,
+    },
+  },
+});
+
+const swiperPrev = document.querySelector('.swiper-button-prev');
+const swiperNext = document.querySelector('.swiper-button-next');
+
+swiperPrev.addEventListener('click', () => {
+  swiper.slidePrev();
+});
+
+swiperNext.addEventListener('click', () => {
+  swiper.slideNext();
+});
 
 
 // ---------------------------------
