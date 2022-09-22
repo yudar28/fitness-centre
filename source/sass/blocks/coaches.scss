@@ -11,11 +11,13 @@
   @media (max-width: 1199px) {
     // width: 88.28%;
     width: 73.7%;
+    padding-bottom: 100px;
   }
 
   @media (max-width: 767px) {
     width: 90.63%;
     padding-top: 20px;
+    padding-bottom: 70px;
   }
 }
 
@@ -37,6 +39,8 @@
   }
 
   @media (max-width: 767px) {
+    margin-bottom: 42px;
+
     font-size: 32px;
     line-height: 32px;
   }
@@ -77,6 +81,10 @@
 .coaches__item:hover h3,
 .coaches__item:focus h3 {
   bottom: 202px;
+
+  @media (max-width: 767px) {
+    bottom: 192px;
+  }
 }
 
 .coaches__container {
@@ -87,7 +95,6 @@
   position: absolute;
   top: 0;
   color: #ffffff;
-  overflow: scroll;
 }
 
 .coaches__item:hover .coaches__container,
@@ -101,6 +108,13 @@
   height: 220px;
   width: 100%;
   top: 74px;
+
+  overflow: scroll;
+
+  @media (max-width: 767px) {
+    height: 210px;
+    top: 64px;
+  }
 }
 
 .coaches__container p {
@@ -118,6 +132,10 @@
 
   list-style-type: none;
   text-align: left;
+
+  @media (max-width: 767px) {
+    padding: 0 30px 0 34px;
+  }
 }
 
 .coaches__description-item {

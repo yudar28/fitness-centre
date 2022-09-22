@@ -37,7 +37,7 @@ const swiper = new Swiper('.swiper', {
   slidesPerView: 1,
 
   // номер слайда с которого начинается слайдер
-  initialSlide: 2,
+  initialSlide: 3,
 
   breakpoints: {
     768: {
