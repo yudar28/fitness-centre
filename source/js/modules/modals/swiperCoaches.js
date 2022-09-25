@@ -1,5 +1,5 @@
 const swiperCoaches = () => {
-  const swiper = new Swiper('.swiper', {
+  const swiper = new Swiper('.coaches__swiper', {
     spaceBetween: 0,
     loop: true,
     simulateTouch: true,
@@ -8,8 +8,6 @@ const swiperCoaches = () => {
       nextEl: '.swiper-button-next',
       prevEl: '.swiper-button-prev',
     },
-
-    hashNavigation: true,
 
     keyboard: {
       enabled: true,
@@ -36,8 +34,8 @@ const swiperCoaches = () => {
     },
   });
 
-  const swiperPrev = document.querySelector('.swiper-button-prev');
-  const swiperNext = document.querySelector('.swiper-button-next');
+  const swiperPrev = document.querySelector('.coaches .swiper-button-prev');
+  const swiperNext = document.querySelector('.coaches .swiper-button-next');
 
   swiperPrev.addEventListener('click', () => {
     swiper.slidePrev();

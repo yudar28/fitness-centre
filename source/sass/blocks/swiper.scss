@@ -15,8 +15,8 @@
   align-items: center;
 }
 
-.swiper-button-prev,
-.swiper-button-next {
+.coaches .swiper-button-prev,
+.coaches .swiper-button-next {
   &::after {
     display: none;
   }
@@ -37,7 +37,7 @@
   }
 }
 
-.swiper-button-prev {
+.coaches .swiper-button-prev {
   left: -62px;
 
   @media (max-width: 1279px) {
@@ -53,7 +53,7 @@
   }
 }
 
-.swiper-button-next {
+.coaches .swiper-button-next {
   transform: rotate(180deg);
   right: -62px;
 

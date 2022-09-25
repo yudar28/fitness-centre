@@ -202,11 +202,11 @@
 
       <section class="coaches">
         <h2>Тренеры</h2>
-        <div class="swiper">
+        <div class="coaches__swiper swiper">
           <!-- Additional required wrapper -->
           <div class="swiper-wrapper">
             <!-- Slides -->
-            <div data-hash="slide-1" class="swiper-slide">
+            <div class="swiper-slide">
               <div class="coaches__item" tabindex="0">
                 <picture>
                   <img src="img/coach/coach-1-desktop.jpg" srcset="img/coach/coach-1-desktop@2x.jpg 2x" width="260" height="294" alt="Девушка с черными волосами в бордовой кофте">
@@ -224,7 +224,7 @@
                 </div>
               </div>
             </div>
-            <div data-hash="slide-2" class="swiper-slide">
+            <div class="swiper-slide">
               <div class="coaches__item" tabindex="0">
                 <picture>
                   <img src="img/coach/coach-2-desktop.jpg" srcset="img/coach/coach-2-desktop@2x.jpg 2x" width="260" height="294" alt="Парень с черными волосами в черной кофте">
@@ -242,7 +242,7 @@
                 </div>
               </div>
             </div>
-            <div data-hash="slide-3" class="swiper-slide">
+            <div class="swiper-slide">
               <div class="coaches__item" tabindex="0">
                 <picture>
                   <!-- <source type="image/webp" media="(max-width: 767px)" srcset="img/coach/coach-3-mobile.webp 1x, img/coach/coach-3-mobile@2x.webp 2x"> -->
@@ -266,7 +266,7 @@
 
               </div>
             </div>
-            <div data-hash="slide-4" class="swiper-slide">
+            <div class="swiper-slide">
               <div class="coaches__item" tabindex="0">
                 <picture>
                   <!-- <source type="image/webp" media="(max-width: 1199px)" srcset="img/coach/coach-1-tablet.webp 1x, img/coach/coach-1-tablet@2x.webp 2x"> -->
@@ -287,7 +287,7 @@
                 </div>
               </div>
             </div>
-            <div data-hash="slide-5" class="swiper-slide">
+            <div class="swiper-slide">
               <div class="coaches__item" tabindex="0">
                 <picture>
                   <img src="img/coach/coach-1-desktop.jpg" srcset="img/coach/coach-1-desktop@2x.jpg 2x" width="260" height="294" alt="Девушка с черными волосами в бордовой кофте">
@@ -305,7 +305,7 @@
                 </div>
               </div>
             </div>
-            <div data-hash="slide-6" class="swiper-slide">
+            <div class="swiper-slide">
               <div class="coaches__item" tabindex="0">
                 <picture>
                   <img src="img/coach/coach-1-desktop.jpg" srcset="img/coach/coach-1-desktop@2x.jpg 2x" width="260" height="294" alt="Девушка с черными волосами в бордовой кофте">
@@ -323,7 +323,7 @@
                 </div>
               </div>
             </div>
-            <div data-hash="slide-7" class="swiper-slide">
+            <div class="swiper-slide">
               <div class="coaches__item" tabindex="0">
                 <picture>
                   <img src="img/coach/coach-1-desktop.jpg" srcset="img/coach/coach-1-desktop@2x.jpg 2x" width="260" height="294" alt="Девушка с черными волосами в бордовой кофте">
@@ -341,7 +341,7 @@
                 </div>
               </div>
             </div>
-            <div  data-hash="slide-8" class="swiper-slide">
+            <div class="swiper-slide">
               <div class="coaches__item" tabindex="0">
                 <picture>
                   <img src="img/coach/coach-1-desktop.jpg" srcset="img/coach/coach-1-desktop@2x.jpg 2x" width="260" height="294" alt="Девушка с черными волосами в бордовой кофте">
@@ -457,7 +457,7 @@
 
       <section class="reviews">
         <h2>Отзывы</h2>
-        <div class="swiper-reviews swiper">
+        <div class="reviews__swiper swiper">
           <!-- Additional required wrapper -->
           <div class="swiper-wrapper">
             <!-- Slides -->
@@ -485,20 +485,32 @@
                 <p>«Хожу в SuperClub уже больше года. Нравится, что в клубе всегда чисто, тренажеры обновляют, персонал дружелюбный. Зал просторный, даже в вечернее время нет очередей»</p>
               </div>
             </div>
-
+            <div class="swiper-slide">
+              <div class="reviews__item">
+                <picture>
+                  <!-- <source type="image/webp" media="(max-width: 767px)" srcset="img/review-avatar-mobile.webp 1x, img/review-avatar-mobile@2x.webp 2x">
+                  <source type="image/webp" srcset="img/review-avatar.webp 1x, img/review-avatar@2x.webp 2x"> -->
+                  <source media="(max-width: 767px)" srcset="img/review-avatar-mobile.png 1x, img/review-avatar-mobile@2x.png 2x">
+                  <img src="img/review-avatar.png" srcset="img/review-avatar@2x.png 2x" width="80" height="80" alt="Аватар девушки с черными волосами">
+                </picture>
+                <h3>Маша Орлова</h3>
+                <p>«Хожу в SuperClub уже больше года. Нравится, что в клубе всегда чисто, тренажеры обновляют, персонал дружелюбный. Зал просторный, даже в вечернее время нет очередей»</p>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-button-prev">
+            <svg width="16" height="32" viewBox="0 0 16 32">
+              <use xlink:href="img/sprite_auto.svg#arrow"></use>
+            </svg>
+          </div>
+          <div class="swiper-button-next">
+            <svg width="16" height="32" viewBox="0 0 16 32">
+              <use xlink:href="img/sprite_auto.svg#arrow"></use>
+            </svg>
           </div>
         </div>
-        <div class="reviews__button reviews__button--prev">
-          <svg width="16" height="32" viewBox="0 0 16 32">
-            <use xlink:href="img/sprite_auto.svg#arrow"></use>
-          </svg>
-        </div>
-        <div class="reviews__button reviews__button--next">
-          <svg width="16" height="32" viewBox="0 0 16 32">
-            <use xlink:href="img/sprite_auto.svg#arrow"></use>
-          </svg>
-        </div>
-        </section>
+
+      </section>
 
     </main>
 

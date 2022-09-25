@@ -1396,22 +1396,22 @@ a[href^="tel:"]:hover {
   align-items: center;
 }
 
-.swiper-button-prev,
-.swiper-button-next {
+.coaches .swiper-button-prev,
+.coaches .swiper-button-next {
   top: calc(50% - 10px);
   cursor: pointer;
 }
 
-.swiper-button-prev::after,
-.swiper-button-next::after {
+.coaches .swiper-button-prev::after,
+.coaches .swiper-button-next::after {
   display: none;
 }
 
-.swiper-button-prev {
+.coaches .swiper-button-prev {
   left: -62px;
 }
 
-.swiper-button-next {
+.coaches .swiper-button-next {
   -webkit-transform: rotate(180deg);
   -ms-transform: rotate(180deg);
   transform: rotate(180deg);
@@ -1758,7 +1758,7 @@ a[href^="tel:"]:hover {
   position: relative;
   margin: 0 auto;
   padding: 0 0 120px;
-  width: 672px;
+  width: 685px;
 }
 
 .reviews h2 {
@@ -1774,7 +1774,7 @@ a[href^="tel:"]:hover {
 
 .reviews__item {
   margin-top: 50px;
-  padding: 62px;
+  padding: 62px 58px 57px 65px;
   width: 560px;
   display: -ms-grid;
   display: grid;
@@ -1806,9 +1806,11 @@ a[href^="tel:"]:hover {
   -ms-grid-column: 3;
   grid-area: title;
   margin: 0;
+  margin-top: -8px;
   font-weight: 700;
   font-size: 20px;
   line-height: 150%;
+  text-align: left;
 }
 
 .reviews__item p {
@@ -1816,26 +1818,33 @@ a[href^="tel:"]:hover {
   -ms-grid-column: 3;
   grid-area: text;
   margin: 0;
+  margin-top: -47px;
   font-weight: 400;
   font-size: 16px;
   line-height: 140%;
+  text-align: left;
 }
 
-.reviews__button {
-  position: absolute;
-  top: 201px;
+.reviews .swiper-button-prev,
+.reviews .swiper-button-next {
   cursor: pointer;
+  top: calc(50% + 25px);
 }
 
-.reviews__button--prev {
+.reviews .swiper-button-prev::after,
+.reviews .swiper-button-next::after {
+  display: none;
+}
+
+.reviews .swiper-button-prev {
   left: 0;
 }
 
-.reviews__button--next {
-  right: 0;
+.reviews .swiper-button-next {
   -webkit-transform: rotate(180deg);
   -ms-transform: rotate(180deg);
   transform: rotate(180deg);
+  right: 0;
 }
 
 /* @media (hover: hover), screen and (min-width: 0\0) {
@@ -1862,11 +1871,11 @@ a[href^="tel:"]:hover {
     width: 90%;
   }
 
-  .swiper-button-prev {
+  .coaches .swiper-button-prev {
     left: -42px;
   }
 
-  .swiper-button-next {
+  .coaches .swiper-button-next {
     right: -42px;
   }
 }
@@ -2100,16 +2109,16 @@ a[href^="tel:"]:hover {
     height: 294px;
   }
 
-  .swiper-button-prev,
-  .swiper-button-next {
+  .coaches .swiper-button-prev,
+  .coaches .swiper-button-next {
     top: calc(50% - 9px);
   }
 
-  .swiper-button-prev {
+  .coaches .swiper-button-prev {
     left: -62px;
   }
 
-  .swiper-button-next {
+  .coaches .swiper-button-next {
     right: -62px;
   }
 
@@ -2287,13 +2296,18 @@ a[href^="tel:"]:hover {
   }
 
   .reviews {
-    width: 88.28%;
+    width: 90%;
     padding: 0 0 100px;
   }
 
   .reviews h2 {
     font-size: 42px;
     line-height: 42px;
+  }
+
+  .reviews__item {
+    margin-top: 41px;
+    width: 566px;
   }
 }
 
@@ -2530,18 +2544,18 @@ a[href^="tel:"]:hover {
     padding: 0 30px 0 34px;
   }
 
-  .swiper-button-prev,
-  .swiper-button-next {
+  .coaches .swiper-button-prev,
+  .coaches .swiper-button-next {
     width: 10px;
     height: 19px;
     top: calc(50% + 25px);
   }
 
-  .swiper-button-prev {
+  .coaches .swiper-button-prev {
     left: 0;
   }
 
-  .swiper-button-next {
+  .coaches .swiper-button-next {
     right: 0;
   }
 
@@ -2740,5 +2754,67 @@ a[href^="tel:"]:hover {
   .reviews h2 {
     font-size: 32px;
     line-height: 32px;
+  }
+
+  .reviews__item {
+    width: 226px;
+    padding: 40px 25px 34px 28px;
+    grid-template-areas: "img title" "text text";
+    -webkit-column-gap: 15px;
+    -moz-column-gap: 15px;
+    column-gap: 15px;
+  }
+
+  .reviews__item > h3 {
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 1;
+    -ms-grid-column: 3;
+  }
+
+  .reviews__item > h3 {
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 1;
+    -ms-grid-column: 3;
+  }
+
+  .reviews__item img {
+    margin-left: 12px;
+    width: 68px;
+    height: 68px;
+  }
+
+  .reviews__item h3 {
+    margin-top: 8px;
+    line-height: 135%;
+  }
+
+  .reviews__item img {
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 1;
+    -ms-grid-column: 1;
+  }
+
+  .reviews__item > h3 {
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 1;
+    -ms-grid-column: 3;
+  }
+
+  .reviews__item p {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 3;
+  }
+
+  .reviews__item p {
+    margin-top: 15px;
+    text-align: center;
+  }
+
+  .reviews .swiper-button-prev,
+  .reviews .swiper-button-next {
+    width: 10px;
+    height: 19px;
+    top: calc(50% + 33px);
   }
 }
