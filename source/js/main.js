@@ -2,6 +2,7 @@ import {iosVhFix} from './utils/ios-vh-fix';
 import {initModals} from './modules/modals/init-modals';
 import {addSmoothScroll} from './modules/modals/smoth-scroll';
 import {onClickTab} from './modules/modals/tabs';
+import {swiperCoaches} from './modules/modals/swiperCoaches';
 
 // ---------------------------------
 
@@ -16,55 +17,31 @@ addSmoothScroll();
 
 onClickTab();
 
-const swiper = new Swiper('.swiper', {
-  spaceBetween: 0,
-  loop: true,
-  simulateTouch: true,
+swiperCoaches();
 
-  navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
-  },
+// const swiperReviews = new Swiper('.swiper-reviews', {
+//   // slidesPerView: 1,
+//   navigation: {
+//     nextEl: '.reviews__button--next',
+//     prevEl: '.reviews__button--prev',
+//   },
 
-  hashNavigation: true,
+//   keyboard: {
+//     enabled: true,
+//     onlyInViewport: false,
+//   },
+// });
 
-  keyboard: {
-    enabled: true,
-    onlyInViewport: false,
-  },
+// const swiperReviewPrev = document.querySelector('.reviews__button--prev');
+// const swiperReviewNext = document.querySelector('.reviews__button--next');
 
-  watchOverflow: true,
-  slidesPerView: 1,
+// swiperReviewPrev.addEventListener('click', () => {
+//   swiperReviews.slidePrev();
+// });
 
-  // номер слайда с которого начинается слайдер
-  initialSlide: 3,
-
-  breakpoints: {
-    768: {
-      slidesPerView: 2,
-      spaceBetween: 30,
-    },
-
-    1200: {
-      slidesPerView: 4,
-      initialSlide: 0,
-      spaceBetween: 40,
-    },
-  },
-});
-
-const swiperPrev = document.querySelector('.swiper-button-prev');
-const swiperNext = document.querySelector('.swiper-button-next');
-
-swiperPrev.addEventListener('click', () => {
-  swiper.slidePrev();
-});
-
-swiperNext.addEventListener('click', () => {
-  swiper.slideNext();
-});
-
-
+// swiperReviewNext.addEventListener('click', () => {
+//   swiperReviews.slideNext();
+// });
 // ---------------------------------
 
 // ❗❗❗ обязательно установите плагины eslint, stylelint, editorconfig в редактор кода.

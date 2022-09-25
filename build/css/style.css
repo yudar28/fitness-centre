@@ -1624,7 +1624,7 @@ a[href^="tel:"]:hover {
 }
 
 .offers__wrapper {
-  margin-top: 47px;
+  margin-top: 50px;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr 40px 1fr;
@@ -1752,6 +1752,90 @@ a[href^="tel:"]:hover {
   font-size: 12px;
   line-height: 14px;
   color: #1c3374;
+}
+
+.reviews {
+  position: relative;
+  margin: 0 auto;
+  padding: 0 0 120px;
+  width: 672px;
+}
+
+.reviews h2 {
+  margin: 0;
+  font-family: "Bebas Neue", "Arial", sans-serif;
+  font-weight: 700;
+  font-size: 49px;
+  line-height: 49px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.reviews__item {
+  margin-top: 50px;
+  padding: 62px;
+  width: 560px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 80px 28px auto;
+  grid-template-columns: 80px auto;
+  -webkit-column-gap: 28px;
+  -moz-column-gap: 28px;
+  column-gap: 28px;
+  grid-template-areas: "img title" "img text";
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: start;
+  background-color: #1c3374;
+  -webkit-box-shadow: 0 0 40px rgba(28, 51, 116, 0.2);
+  box-shadow: 0 0 40px rgba(28, 51, 116, 0.2);
+  color: #ffffff;
+}
+
+.reviews__item img {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 1;
+  grid-area: img;
+}
+
+.reviews__item h3 {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  -ms-grid-column: 3;
+  grid-area: title;
+  margin: 0;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 150%;
+}
+
+.reviews__item p {
+  -ms-grid-row: 2;
+  -ms-grid-column: 3;
+  grid-area: text;
+  margin: 0;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 140%;
+}
+
+.reviews__button {
+  position: absolute;
+  top: 201px;
+  cursor: pointer;
+}
+
+.reviews__button--prev {
+  left: 0;
+}
+
+.reviews__button--next {
+  right: 0;
+  -webkit-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  transform: rotate(180deg);
 }
 
 /* @media (hover: hover), screen and (min-width: 0\0) {
@@ -2201,6 +2285,16 @@ a[href^="tel:"]:hover {
   .offers__overs--free-month p {
     padding-right: 30px;
   }
+
+  .reviews {
+    width: 88.28%;
+    padding: 0 0 100px;
+  }
+
+  .reviews h2 {
+    font-size: 42px;
+    line-height: 42px;
+  }
 }
 
 @media (max-width: 1199px) and (-webkit-min-device-pixel-ratio: 2), (max-width: 1199px) and (-o-min-device-pixel-ratio: 2/1), (max-width: 1199px) and (min-resolution: 2dppx) {
@@ -2636,5 +2730,15 @@ a[href^="tel:"]:hover {
 
   .offers__overs--free-month p {
     padding-right: 0;
+  }
+
+  .reviews {
+    width: 90.63%;
+    padding: 0 0 70px;
+  }
+
+  .reviews h2 {
+    font-size: 32px;
+    line-height: 32px;
   }
 }
