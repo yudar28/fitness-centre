@@ -1,0 +1,36 @@
+.container-form-contacts {
+  width: 100%;
+  position: relative;
+  background: linear-gradient(to right, #102654 50%, #ffffff 50%);
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 50%;
+    height: 1px;
+    background-color: #74819c;
+  }
+
+  @media (max-width: 1199px) {
+    &::after {
+      display: none;
+    }
+
+    background: none;
+  }
+}
+
+.container-form-contacts__wrapper {
+  margin: 0 auto;
+  width: 1160px;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+  @media (max-width: 1199px) {
+    width: 100%;
+    grid-template-columns: 1fr;
+  }
+}

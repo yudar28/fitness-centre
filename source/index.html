@@ -509,8 +509,56 @@
             </svg>
           </div>
         </div>
-
       </section>
+
+      <div class="container-form-contacts">
+        <div class="container-form-contacts__wrapper">
+          <section class="form">
+            <h2 class="visually-hidden">Оставь заявку на пробное бесплатное занятие</h2>
+            <div class="form__wrapper">
+              <h3>БЕСПЛАТНОЕ занятие</h3>
+              <form action="https://echo.htmlacademy.ru/" method="get">
+                <ul class="form__list">
+                  <li class="form__item">
+                    <label class="visually-hidden" for="name">Имя</label>
+                    <input type="text" id="name" name="name" placeholder="Имя" required>
+                  </li>
+                  <li class="form__item">
+                    <label class="visually-hidden" for="phone">Телефон</label>
+                    <input type="tel" id="phone" name="phone" pattern="^((8|\+7)[\- ]?)?(\(?\d{3}\)?[\- ]?)?[\d\- ]{7,10}$" title="Введите телефон в формате 88008888888" placeholder="Телефон" required>
+                  </li>
+                </ul>
+                <button class="form__button" type="submit">отправить</button>
+              </form>
+            </div>
+          </section>
+          <section class="contacts">
+            <h2>Контакты</h2>
+            <div class="contacts__container">
+              <ul class="contacts__list contacts__list--1">
+                <li class="contacts__item">
+                  <h3>Адрес:</h3>
+                  <p>г. Омск, ул. 60 лет Октября, 7</p>
+                </li>
+                <li class="contacts__item">
+                  <h3>График работы:</h3>
+                  <p>Пн-Вс: с 8:00 до 22:00</p>
+                </li>
+              </ul>
+              <ul class="contacts__list contacts__list--2">
+                <li class="contacts__item">
+                  <h3>Телефон:</h3>
+                  <a href="tel:88005555555">8-800-555-55-55</a>
+                </li>
+                <li class="contacts__item">
+                  <h3>Email:</h3>
+                  <a href="mailto:omsk@supergym.ru">omsk@supergym.ru</a>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </div>
+      </div>
 
     </main>
 

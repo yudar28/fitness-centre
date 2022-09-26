@@ -1,0 +1,149 @@
+.contacts {
+  margin-left: 120px;
+  padding: 64px 0 61px;
+
+  @media (max-width: 1199px) {
+    width: 61.46%;
+    margin: 0 auto;
+    padding: 70px 0;
+    position: relative;
+    left: -14px;
+  }
+
+  @media (max-width: 767px) {
+    width: 90.63%;
+    left: 0;
+  }
+}
+
+.contacts h2 {
+  margin: 0;
+
+  font-family: "Bebas Neue", "Arial", sans-serif;
+  font-weight: 700;
+  font-size: 49px;
+  line-height: 64px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+
+  @media (max-width: 1199px) {
+    font-size: 42px;
+    line-height: 42px;
+  }
+
+  @media (max-width: 767px) {
+    font-size: 32px;
+    line-height: 32px;
+  }
+}
+
+.contacts__container {
+  margin: 31px 0 0 5px;
+  display: grid;
+  grid-template-columns: 230px auto;
+  column-gap: 60px;
+
+  @media (max-width: 1199px) {
+    margin: 32px 0 0 -1px;
+    grid-template-columns: 56.36% auto;
+    column-gap: 48px;
+  }
+
+  @media (max-width: 767px) {
+    grid-template-columns: 1fr;
+    margin: 34px 0 0 0;
+  }
+}
+
+.contacts__list {
+  position: relative;
+  margin: 0;
+  padding: 0;
+
+  display: grid;
+  grid-template-columns: 1fr;
+  row-gap: 14px;
+
+  list-style-type: none;
+
+  &--1 {
+    &::after {
+      content: "";
+      position: absolute;
+      top: 6px;
+      right: -2px;
+      width: 1px;
+      height: 87%;
+      background-color: #74819c;
+    }
+  }
+
+  @media (max-width: 1199px) {
+    row-gap: 20px;
+
+    &--1 {
+      &::after {
+        height: 91%;
+      }
+    }
+  }
+
+  @media (max-width: 767px) {
+    &--1 {
+      &::after {
+        display: none;
+      }
+    }
+
+    &--2 {
+      margin-top: 20px;
+    }
+  }
+}
+
+.contacts__item h3 {
+  margin: 0;
+
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 150%;
+
+  @media (max-width: 1199px) {
+    font-size: 20px;
+  }
+}
+
+.contacts__item p,
+.contacts__item a {
+  margin: 0;
+  padding: 0;
+
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 27px;
+  color: #102654;
+
+  @media (max-width: 1199px) {
+    font-size: 18px;
+    padding-top: 5px;
+  }
+}
+
+.contacts__item a {
+  @media (max-width: 1199px) {
+    display: block;
+  }
+}
+
+.contacts__item a[href^="tel:"] {
+  letter-spacing: 1.2px;
+
+  @media (max-width: 1199px) {
+    letter-spacing: 1.3px;
+  }
+
+  @media (max-width: 767px) {
+    padding-left: 0;
+    letter-spacing: 0.6px;
+  }
+}

@@ -2,7 +2,8 @@ import {iosVhFix} from './utils/ios-vh-fix';
 import {initModals} from './modules/modals/init-modals';
 import {addSmoothScroll} from './modules/modals/smoth-scroll';
 import {onClickTab} from './modules/modals/tabs';
-import {swiperCoaches} from './modules/modals/swiperCoaches';
+import {swiperCoaches} from './modules/modals/swiper-coaches';
+import {swiperReviews} from './modules/modals/swiper-reviews';
 
 // ---------------------------------
 
@@ -19,29 +20,9 @@ onClickTab();
 
 swiperCoaches();
 
-const swiperReviews = new Swiper('.reviews__swiper', {
-  slidesPerView: 1,
-  navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
-  },
+swiperReviews();
 
-  keyboard: {
-    enabled: true,
-    onlyInViewport: false,
-  },
-});
 
-// const swiperReviewPrev = document.querySelector('.reviews .swiper-button-next');
-// const swiperReviewNext = document.querySelector('.reviews .swiper-button-prev');
-
-// swiperReviewPrev.addEventListener('click', () => {
-//   swiperReviews.slidePrev();
-// });
-
-// swiperReviewNext.addEventListener('click', () => {
-//   swiperReviews.slideNext();
-// });
 // ---------------------------------
 
 // ❗❗❗ обязательно установите плагины eslint, stylelint, editorconfig в редактор кода.
