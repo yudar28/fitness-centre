@@ -838,6 +838,75 @@ a[href^="tel:"]:hover {
 
 .page-footer {
   margin-top: auto;
+  background-color: #030a1a;
+  color: #ffffff;
+}
+
+.page-footer__wrapper {
+  margin: 0 auto;
+  padding: 44px 0;
+  width: 1160px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 3fr 1fr;
+  grid-template-columns: 1fr 3fr 1fr;
+  -webkit-column-gap: 45px;
+  -moz-column-gap: 45px;
+  column-gap: 45px;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: start;
+}
+
+.page-footer__container {
+  margin: -3px 0 0 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.page-footer__list {
+  margin: 0;
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  list-style-type: none;
+}
+
+.page-footer__item {
+  margin-right: 20px;
+}
+
+.page-footer__list--2 .page-footer__item:last-child {
+  margin-right: 0;
+}
+
+.page-footer__item a {
+  padding: 5px 10px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  color: #ffffff;
+}
+
+.page-footer .page-footer__social {
+  margin: -6px -2px 0 0;
 }
 
 .gym {
@@ -2046,6 +2115,41 @@ a[href^="tel:"]:hover {
   letter-spacing: 1.2px;
 }
 
+.social {
+  margin: 0;
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  list-style-type: none;
+}
+
+.social__item:not(:first-child) {
+  margin-left: 5px;
+}
+
+.social__item a {
+  padding: 3px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
 /* @media (hover: hover), screen and (min-width: 0\0) {
   &:hover,
   &:focus {
@@ -2135,6 +2239,33 @@ a[href^="tel:"]:hover {
 
   a[href^="tel:"] {
     letter-spacing: 0;
+  }
+
+  .page-footer__wrapper {
+    width: 88.28%;
+    padding: 48px 0 41px;
+    -webkit-column-gap: 15px;
+    -moz-column-gap: 15px;
+    column-gap: 15px;
+    -ms-grid-columns: 1fr 3.5fr 1fr;
+    grid-template-columns: 1fr 3.5fr 1fr;
+  }
+
+  .page-footer__wrapper img {
+    width: 82px;
+    height: 18px;
+  }
+
+  .page-footer__container {
+    margin-left: 0;
+  }
+
+  .page-footer__item {
+    margin-right: 10px;
+  }
+
+  .page-footer .page-footer__social {
+    margin: -6px -9px 0 0;
   }
 
   .gym {
@@ -2554,7 +2685,7 @@ a[href^="tel:"]:hover {
   .contacts {
     width: 61.46%;
     margin: 0 auto;
-    padding: 70px 0;
+    padding: 70px 0 62px;
     position: relative;
     left: -14px;
   }
@@ -2674,6 +2805,64 @@ a[href^="tel:"]:hover {
     letter-spacing: 0.02em;
     padding: 10px 10px 0;
     margin-right: -10px;
+  }
+
+  .page-footer__wrapper {
+    width: 90.63%;
+    padding: 50px 0 49px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+
+  .page-footer__wrapper img {
+    width: 68px;
+    height: 15px;
+  }
+
+  .page-footer__container {
+    width: 100%;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    -webkit-column-gap: 10px;
+    -moz-column-gap: 10px;
+    column-gap: 10px;
+  }
+
+  .page-footer__list {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+
+  .page-footer__list--1 {
+    margin-top: 23px;
+    margin-left: -10px;
+  }
+
+  .page-footer__list--2 {
+    margin-top: -17px;
+  }
+
+  .page-footer__item {
+    margin: 0;
+    margin-bottom: 16px;
+  }
+
+  .page-footer__item a {
+    font-size: 16px;
+    line-height: 19px;
+  }
+
+  .page-footer .page-footer__social {
+    margin: 16px 0 0 -3px;
   }
 
   .gym {
@@ -3129,6 +3318,7 @@ a[href^="tel:"]:hover {
 
   .contacts {
     width: 90.63%;
+    padding: 70px 0 64px;
     left: 0;
   }
 

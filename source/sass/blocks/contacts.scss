@@ -5,13 +5,14 @@
   @media (max-width: 1199px) {
     width: 61.46%;
     margin: 0 auto;
-    padding: 70px 0;
+    padding: 70px 0 62px;
     position: relative;
     left: -14px;
   }
 
   @media (max-width: 767px) {
     width: 90.63%;
+    padding: 70px 0 64px;
     left: 0;
   }
 }
