@@ -118,8 +118,10 @@
   }
 }
 
-.gym iframe {
+.gym__wrapper {
   position: absolute;
+  width: 364px;
+  height: 228px;
   bottom: 120px;
   right: 359px;
 
@@ -138,5 +140,40 @@
     margin-top: 124px;
     bottom: auto;
     width: 100%;
+  }
+}
+
+.gym__wrapper video {
+  @media (max-width: 767px) {
+    margin: 0 auto;
+  }
+}
+
+.gym__start-player {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  width: 100px;
+  height: 100px;
+  background-image: url("../../img/gym-button-desktop.png");
+  background-color: transparent;
+  border: none;
+
+  cursor: pointer;
+
+  &:hover {
+    opacity: 0.5;
+  }
+
+  &--none {
+    display: none;
+  }
+
+  @media (max-width: 1199px) {
+    width: 73px;
+    height: 73px;
+    background-size: cover;
   }
 }

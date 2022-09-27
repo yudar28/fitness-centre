@@ -1,16 +1,15 @@
 <!DOCTYPE html>
 <html lang="ru">
   <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="fitness-centre" content="Фитнесс-центр в Омске">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Фитнесс-центр в Омске">
     <title>Sypergym - фитнесс центр в Омске</title>
     <link rel="preload" href="fonts/Roboto-Condensed.woff2" as="font" crossorigin="anonymous">
     <link rel="preload" href="fonts/BebasNeue-Regular.woff2" as="font" crossorigin="anonymous">
-    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"/> -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css">
     <link rel="stylesheet" href="css/style.min.css">
   </head>
   <body class="page-body">
@@ -40,8 +39,8 @@
             <a class="basic__btn" href="#subscription">Купить абонемент</a>
           </div>
           <picture>
-            <!-- <source type="image/webp" media="(max-width: 1199px)" srcset="img/main-tablet.webp 1x, img/main-tablet@2x.webp 2x"> -->
-            <!-- <source type="image/webp" srcset="img/main-desktop.webp 1x, img/main-desktop@2x.webp 2x"> -->
+            <source type="image/webp" media="(max-width: 1199px)" srcset="img/main-tablet.webp 1x, img/main-tablet@2x.webp 2x">
+            <source type="image/webp" srcset="img/main-desktop.webp 1x, img/main-desktop@2x.webp 2x">
             <source media="(max-width: 1199px)" srcset="img/main-tablet.jpg 1x, img/main-tablet@2x.jpg 2x">
             <img src="img/main-desktop.jpg" srcset="img/main-desktop@2x.jpg 2x" width="500" height="556" alt="Мужчина в футболке супермена">
           </picture>
@@ -72,19 +71,29 @@
         <div class="gym__container">
           <h2>Тренажерный зал</h2>
           <b>Просторный зал площадью 900 кв/м</b>
-          <p>Supergym – самый большой фитнес центр за Уралом и идеальное место для укрепления тела и здоровья. Тренажерный зал оснащен всем необходимым современным оборудованием для всех спортсменов.
-            <span>В зале расположены отдельная зона для Crossfit и кардио-зона с 40 тренажерами. Также в фитнес центре есть несколько оборудованных залов для различных видов групповых занятий.</span>
+          <p>Supergym&nbsp;&mdash; самый большой фитнес центр за&nbsp;Уралом и&nbsp;идеальное место для укрепления тела и&nbsp;здоровья. Тренажерный зал оснащен всем необходимым современным оборудованием для всех спортсменов.
+            <span>В&nbsp;зале расположены отдельная зона для Crossfit и&nbsp;кардио-зона с&nbsp;40&nbsp;тренажерами. Также в&nbsp;фитнес центре есть несколько оборудованных залов для различных видов групповых занятий.</span>
           </p>
         </div>
         <picture>
-          <!-- <source type="image/webp" media="(max-width: 767px)" srcset="img/gym-mobile.webp 1x, img/gym-mobile@2x.webp 2x">
-          <source type="image/webp" media="(max-width: 1199px)" srcset="img/gym-tablet.webp 1x, img/gym-tablet@2x.webp 2x"> -->
-          <!-- <source type="image/webp" srcset="img/gym-desktop.webp 1x, img/gym-desktop@2x.webp 2x"> -->
+          <source type="image/webp" media="(max-width: 767px)" srcset="img/gym-mobile.webp 1x, img/gym-mobile@2x.webp 2x">
+          <source type="image/webp" media="(max-width: 1199px)" srcset="img/gym-tablet.webp 1x, img/gym-tablet@2x.webp 2x">
+          <source type="image/webp" srcset="img/gym-desktop.webp 1x, img/gym-desktop@2x.webp 2x">
           <source media="(max-width: 767px)" srcset="img/gym-mobile.jpg 1x, img/gym-mobile@2x.jpg 2x">
           <source media="(max-width: 1199px)" srcset="img/gym-tablet.jpg 1x, img/gym-tablet@2x.jpg 2x">
           <img src="img/gym-desktop.jpg" srcset="img/gym-desktop@2x.jpg 2x" width="660" height="401" alt="Тренажерный зал с разными тренажерами">
         </picture>
-        <iframe width="364" height="228" poster="img/picture-for-video-desctop.jpg" src="https://www.youtube.com/embed/9TZXsZItgdw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <div class="gym__wrapper">
+          <video width="364" height="228" poster="img/picture-for-video-desctop.jpg">
+            <source src="img/video.mp4" type="video/mp4">
+          </video>
+          <button class="gym__start-player">
+            <span class="visually-hidden">Запустить видео</span>
+          </button>
+        </div>
+        <!-- <div class="gym__video-player">
+          <iframe width="364" height="228" src="https://www.youtube.com/embed/9TZXsZItgdw?autoplay=1" title="YouTube video player" allowfullscreen></iframe>
+        </div> -->
       </section>
 
       <section class="subscription" id="subscription">
@@ -98,7 +107,7 @@
           <div class="subscription__content">
             <ul class="subscription__content-list subscription__content-list--active" id="tab_1">
               <li class="subscription__content-item">
-                <h3>С тренером</h3>
+                <h3>С&nbsp;тренером</h3>
                 <p>12 занятий</p>
                 <span>5000</span>
                 <b>5000</b>
@@ -106,14 +115,14 @@
               </li>
               <li class="subscription__content-item">
                 <h3>Дневной</h3>
-                <p>с 8:00 до 17:00 </p>
+                <p>с&nbsp;8:00 до&nbsp;17:00 </p>
                 <span>1700</span>
                 <b>1700</b>
                 <a href="#">купить абонемент</a>
               </li>
               <li class="subscription__content-item">
                 <h3>Полный день</h3>
-                <p>с 8:00 до 22:00 </p>
+                <p>с&nbsp;8:00 до&nbsp;22:00</p>
                 <span>2700</span>
                 <b>2700</b>
                 <a href="#">купить абонемент</a>
@@ -121,7 +130,7 @@
             </ul>
             <ul class="subscription__content-list" id="tab_2">
               <li class="subscription__content-item">
-                <h3>С тренером</h3>
+                <h3>С&nbsp;тренером</h3>
                 <p>40 занятий</p>
                 <span>20000</span>
                 <b>20000</b>
@@ -129,14 +138,14 @@
               </li>
               <li class="subscription__content-item">
                 <h3>Дневной</h3>
-                <p>с 8:00 до 17:00 </p>
+                <p>с&nbsp;8:00 до&nbsp;17:00</p>
                 <span>30000</span>
                 <b>30000</b>
                 <a href="#">купить абонемент</a>
               </li>
               <li class="subscription__content-item">
                 <h3>Полный день</h3>
-                <p>с 8:00 до 22:00 </p>
+                <p>с&nbsp;8:00 до&nbsp;22:00</p>
                 <span>40000</span>
                 <b>40000</b>
                 <a href="#">купить абонемент</a>
@@ -144,7 +153,7 @@
             </ul>
             <ul class="subscription__content-list" id="tab_3">
               <li class="subscription__content-item">
-                <h3>С тренером</h3>
+                <h3>С&nbsp;тренером</h3>
                 <p>100 занятий</p>
                 <span>100000</span>
                 <b>100000</b>
@@ -152,14 +161,14 @@
               </li>
               <li class="subscription__content-item">
                 <h3>Дневной</h3>
-                <p>с 8:00 до 17:00 </p>
+                <p>с&nbsp;8:00 до&nbsp;17:00</p>
                 <span>50000</span>
                 <b>50000</b>
                 <a href="#">купить абонемент</a>
               </li>
               <li class="subscription__content-item">
                 <h3>Полный день</h3>
-                <p>с 8:00 до 22:00 </p>
+                <p>с&nbsp;8:00 до&nbsp;22:00</p>
                 <span>60000</span>
                 <b>60000</b>
                 <a href="#">купить абонемент</a>
@@ -173,7 +182,7 @@
         <h2 class="visually-hidden">Супер игры, соревнования по CrossFit</h2>
         <div class="promo__container">
           <h3>SUPER <br> GAMES</h3>
-          <p>Ежегодные соревнования по CrossFit</p>
+          <p>Ежегодные соревнования по&nbsp;CrossFit</p>
           <div class="promo__data">
             <p>Дата</p>
             <div class="promo__data-info">
@@ -188,9 +197,9 @@
           <a>заполнить заявку</a>
         </div>
         <picture>
-          <!-- <source type="image/webp" media="(max-width: 767px)" srcset="img/application-mobile.webp 1x, img/application-mobile@2x.webp 2x"> -->
-          <!-- <source type="image/webp" media="(max-width: 1199px)" srcset="img/application-tablet.webp 1x, img/application-tablet@2x.webp 2x"> -->
-          <!-- <source type="image/webp" srcset="img/application-desktop.webp 1x, img/application-desktop@2x.webp 2x"> -->
+          <source type="image/webp" media="(max-width: 767px)" srcset="img/application-mobile.webp 1x, img/application-mobile@2x.webp 2x">
+          <source type="image/webp" media="(max-width: 1199px)" srcset="img/application-tablet.webp 1x, img/application-tablet@2x.webp 2x">
+          <source type="image/webp" srcset="img/application-desktop.webp 1x, img/application-desktop@2x.webp 2x">
           <source media="(max-width: 767px)" srcset="img/application-mobile.jpg 1x, img/application-mobile@2x.jpg 2x">
           <source media="(max-width: 1199px)" srcset="img/application-tablet.jpg 1x, img/application-tablet@2x.jpg 2x">
           <img src="img/application-desktop.jpg" srcset="img/application-desktop@2x.jpg 2x" width="660" height="500" alt="Мужчина ударил по магнезии и она разлетелась">
@@ -206,6 +215,7 @@
             <div class="swiper-slide">
               <div class="coaches__item" tabindex="0">
                 <picture>
+                  <source type="image/webp" srcset="img/coach/coach-1-desktop.webp 1x, img/coach/coach-1-desktop@2x.webp 2x">
                   <img src="img/coach/coach-1-desktop.jpg" srcset="img/coach/coach-1-desktop@2x.jpg 2x" width="260" height="294" alt="Девушка с черными волосами в бордовой кофте">
                 </picture>
                 <h3>Анна Павлова</h3>
@@ -214,8 +224,8 @@
                     <p>CrossFit</p>
                     <ul class="coaches__description">
                       <li class="coaches__description-item">Certified Level 3 Trainer</li>
-                      <li class="coaches__description-item">Победитель чемпионата России по CrossFit </li>
-                      <li class="coaches__description-item">Опыт — 6 лет</li>
+                      <li class="coaches__description-item">Победитель чемпионата России по&nbsp;CrossFit</li>
+                      <li class="coaches__description-item">Опыт&nbsp;&mdash; 6&nbsp;лет</li>
                     </ul>
                   </div>
                 </div>
@@ -224,6 +234,7 @@
             <div class="swiper-slide">
               <div class="coaches__item" tabindex="0">
                 <picture>
+                  <source type="image/webp" srcset="img/coach/coach-2-desktop.webp 1x, img/coach/coach-2-desktop@2x.webp 2x">
                   <img src="img/coach/coach-2-desktop.jpg" srcset="img/coach/coach-2-desktop@2x.jpg 2x" width="260" height="294" alt="Парень с черными волосами в черной кофте">
                 </picture>
                 <h3>Алексей Лавров</h3>
@@ -232,8 +243,8 @@
                     <p>CrossFit</p>
                       <ul class="coaches__description">
                         <li class="coaches__description-item">Certified Level 3 Trainer</li>
-                        <li class="coaches__description-item">Победитель чемпионата России по CrossFit </li>
-                        <li class="coaches__description-item">Опыт — 6 лет</li>
+                        <li class="coaches__description-item">Победитель чемпионата России по&nbsp;CrossFit</li>
+                        <li class="coaches__description-item">Опыт&nbsp;&mdash; 6&nbsp;лет</li>
                       </ul>
                   </div>
                 </div>
@@ -242,9 +253,9 @@
             <div class="swiper-slide">
               <div class="coaches__item" tabindex="0">
                 <picture>
-                  <!-- <source type="image/webp" media="(max-width: 767px)" srcset="img/coach/coach-3-mobile.webp 1x, img/coach/coach-3-mobile@2x.webp 2x"> -->
-                  <!-- <source type="image/webp" media="(max-width: 1199px)" srcset="img/coach/coach-3-tablet.webp 1x, img/coach/coach-3-tablet@2x.webp 2x"> -->
-                  <!-- <source type="image/webp" srcset="img/coach/coach-3-desktop.webp 1x, img/coach/coach-3-desktop@2x.webp 2x"> -->
+                  <source type="image/webp" media="(max-width: 767px)" srcset="img/coach/coach-3-mobile.webp 1x, img/coach/coach-3-mobile@2x.webp 2x">
+                  <source type="image/webp" media="(max-width: 1199px)" srcset="img/coach/coach-3-tablet.webp 1x, img/coach/coach-3-tablet@2x.webp 2x">
+                  <source type="image/webp" srcset="img/coach/coach-3-desktop.webp 1x, img/coach/coach-3-desktop@2x.webp 2x">
                   <source media="(max-width: 767px)" srcset="img/coach/coach-3-mobile.jpg 1x, img/coach/coach-3-mobile@2x.jpg 2x">
                   <source media="(max-width: 1199px)" srcset="img/coach/coach-3-tablet.jpg 1x, img/coach/coach-3-tablet@2x.jpg 2x">
                   <img src="img/coach/coach-3-desktop.jpg" srcset="img/coach/coach-3-desktop@2x.jpg 2x" width="260" height="294" alt="Парень с черными волосами в черной майке">
@@ -255,8 +266,8 @@
                     <p>CrossFit</p>
                       <ul class="coaches__description">
                         <li class="coaches__description-item">Certified Level 3 Trainer</li>
-                        <li class="coaches__description-item">Победитель чемпионата России по CrossFit </li>
-                        <li class="coaches__description-item">Опыт — 6 лет</li>
+                        <li class="coaches__description-item">Победитель чемпионата России по&nbsp;CrossFit</li>
+                        <li class="coaches__description-item">Опыт&nbsp;&mdash; 6&nbsp;лет</li>
                       </ul>
                   </div>
                 </div>
@@ -266,8 +277,8 @@
             <div class="swiper-slide">
               <div class="coaches__item" tabindex="0">
                 <picture>
-                  <!-- <source type="image/webp" media="(max-width: 1199px)" srcset="img/coach/coach-1-tablet.webp 1x, img/coach/coach-1-tablet@2x.webp 2x"> -->
-                  <!-- <source type="image/webp" srcset="img/coach/coach-1-desktop.webp 1x, img/coach/coach-1-desktop@2x.webp 2x"> -->
+                  <source type="image/webp" media="(max-width: 1199px)" srcset="img/coach/coach-4-tablet.webp 1x, img/coach/coach-4-tablet@2x.webp 2x">
+                  <source type="image/webp" srcset="img/coach/coach-4-desktop.webp 1x, img/coach/coach-4-desktop@2x.webp 2x">
                   <source media="(max-width: 1199px)" srcset="img/coach/coach-4-tablet.jpg 1x, img/coach/coach-4-tablet@2x.jpg 2x">
                   <img src="img/coach/coach-4-desktop.jpg" srcset="img/coach/coach-4-desktop@2x.jpg 2x" width="260" height="294" alt="Девушка с черными волосами в темно-зеленой кофте">
                 </picture>
@@ -277,8 +288,8 @@
                     <p>CrossFit</p>
                     <ul class="coaches__description">
                       <li class="coaches__description-item">Certified Level 3 Trainer</li>
-                      <li class="coaches__description-item">Победитель чемпионата России по CrossFit </li>
-                      <li class="coaches__description-item">Опыт — 6 лет</li>
+                      <li class="coaches__description-item">Победитель чемпионата России по&nbsp;CrossFit</li>
+                      <li class="coaches__description-item">Опыт&nbsp;&mdash; 6&nbsp;лет</li>
                     </ul>
                   </div>
                 </div>
@@ -287,6 +298,7 @@
             <div class="swiper-slide">
               <div class="coaches__item" tabindex="0">
                 <picture>
+                  <source type="image/webp" srcset="img/coach/coach-1-desktop.webp 1x, img/coach/coach-1-desktop@2x.webp 2x">
                   <img src="img/coach/coach-1-desktop.jpg" srcset="img/coach/coach-1-desktop@2x.jpg 2x" width="260" height="294" alt="Девушка с черными волосами в бордовой кофте">
                 </picture>
                 <h3>Ева Павлова</h3>
@@ -295,8 +307,8 @@
                     <p>CrossFit</p>
                     <ul class="coaches__description">
                       <li class="coaches__description-item">Certified Level 3 Trainer</li>
-                      <li class="coaches__description-item">Победитель чемпионата России по CrossFit </li>
-                      <li class="coaches__description-item">Опыт — 6 лет</li>
+                      <li class="coaches__description-item">Победитель чемпионата России по&nbsp;CrossFit</li>
+                      <li class="coaches__description-item">Опыт&nbsp;&mdash; 6&nbsp;лет</li>
                     </ul>
                   </div>
                 </div>
@@ -305,6 +317,7 @@
             <div class="swiper-slide">
               <div class="coaches__item" tabindex="0">
                 <picture>
+                  <source type="image/webp" srcset="img/coach/coach-1-desktop.webp 1x, img/coach/coach-1-desktop@2x.webp 2x">
                   <img src="img/coach/coach-1-desktop.jpg" srcset="img/coach/coach-1-desktop@2x.jpg 2x" width="260" height="294" alt="Девушка с черными волосами в бордовой кофте">
                 </picture>
                 <h3>Ольга Павлова</h3>
@@ -313,8 +326,8 @@
                     <p>CrossFit</p>
                     <ul class="coaches__description">
                       <li class="coaches__description-item">Certified Level 3 Trainer</li>
-                      <li class="coaches__description-item">Победитель чемпионата России по CrossFit </li>
-                      <li class="coaches__description-item">Опыт — 6 лет</li>
+                      <li class="coaches__description-item">Победитель чемпионата России по&nbsp;CrossFit</li>
+                      <li class="coaches__description-item">Опыт&nbsp;&mdash; 6&nbsp;лет</li>
                     </ul>
                   </div>
                 </div>
@@ -323,6 +336,7 @@
             <div class="swiper-slide">
               <div class="coaches__item" tabindex="0">
                 <picture>
+                  <source type="image/webp" srcset="img/coach/coach-1-desktop.webp 1x, img/coach/coach-1-desktop@2x.webp 2x">
                   <img src="img/coach/coach-1-desktop.jpg" srcset="img/coach/coach-1-desktop@2x.jpg 2x" width="260" height="294" alt="Девушка с черными волосами в бордовой кофте">
                 </picture>
                 <h3>Екатерина Павлова</h3>
@@ -331,8 +345,8 @@
                     <p>CrossFit</p>
                     <ul class="coaches__description">
                       <li class="coaches__description-item">Certified Level 3 Trainer</li>
-                      <li class="coaches__description-item">Победитель чемпионата России по CrossFit </li>
-                      <li class="coaches__description-item">Опыт — 6 лет</li>
+                      <li class="coaches__description-item">Победитель чемпионата России по&nbsp;CrossFit</li>
+                      <li class="coaches__description-item">Опыт&nbsp;&mdash; 6&nbsp;лет</li>
                     </ul>
                   </div>
                 </div>
@@ -341,6 +355,7 @@
             <div class="swiper-slide">
               <div class="coaches__item" tabindex="0">
                 <picture>
+                  <source type="image/webp" srcset="img/coach/coach-1-desktop.webp 1x, img/coach/coach-1-desktop@2x.webp 2x">
                   <img src="img/coach/coach-1-desktop.jpg" srcset="img/coach/coach-1-desktop@2x.jpg 2x" width="260" height="294" alt="Девушка с черными волосами в бордовой кофте">
                 </picture>
                 <h3>Кристина Павлова</h3>
@@ -349,8 +364,8 @@
                     <p>CrossFit</p>
                     <ul class="coaches__description">
                       <li class="coaches__description-item">Certified Level 3 Trainer</li>
-                      <li class="coaches__description-item">Победитель чемпионата России по CrossFit </li>
-                      <li class="coaches__description-item">Опыт — 6 лет</li>
+                      <li class="coaches__description-item">Победитель чемпионата России по&nbsp;CrossFit</li>
+                      <li class="coaches__description-item">Опыт&nbsp;&mdash; 6&nbsp;лет</li>
                     </ul>
                   </div>
                 </div>
@@ -391,12 +406,12 @@
                 <small>машин</small>
               </div>
               <h3>Собственная парковка</h3>
-              <p>Вы всегда найдете место для <br>своей машины на нашей парковке</p>
+              <p>Вы&nbsp;всегда найдете место для <br>своей машины на&nbsp;нашей парковке</p>
             </div>
             <div class="advantages__item advantages__item--trainers">
               <b>100</b>
               <h3>Тренажеров</h3>
-              <p>Современные тренажеры <br>на все группы мышц</p>
+              <p>Современные тренажеры <br>на&nbsp;все группы мышц</p>
             </div>
             <div class="advantages__item advantages__item--comfort">
               <div class="advantages__numbers">
@@ -412,7 +427,7 @@
                 <small>лет </small>
               </div>
               <h3>Тренерский опыт</h3>
-              <p>Добивайтесь своих целей быстрее <br>с профессиональным тренером</p>
+              <p>Добивайтесь своих целей быстрее <br>с&nbsp;профессиональным тренером</p>
             </div>
           </div>
 
@@ -427,13 +442,13 @@
               <h3 class="visually-hidden">абоменемент на год</h3>
               <small>Год</small>
               <b>4999</b>
-              <p>Безлимитный абонемент в тренажерный зал</p>
+              <p>Безлимитный абонемент в&nbsp;тренажерный зал</p>
               <a href="#">подробнее</a>
             </div>
             <picture>
-              <!-- <source type="image/webp" media="(max-width: 767px)" srcset="img/special-offer-mobile.webp 1x, img/special-offer-mobile@2x.webp 2x"> -->
-              <!-- <source type="image/webp" media="(max-width: 1199px)" srcset="img/special-offer-tablet.webp 1x, img/special-offer-tablet@2x.webp 2x"> -->
-              <!-- <source type="image/webp" srcset="img/special-offer-desktop.webp 1x, img/special-offer-desktop@2x.webp 2x"> -->
+              <source type="image/webp" media="(max-width: 767px)" srcset="img/special-offer-mobile.webp 1x, img/special-offer-mobile@2x.webp 2x">
+              <source type="image/webp" media="(max-width: 1199px)" srcset="img/special-offer-tablet.webp 1x, img/special-offer-tablet@2x.webp 2x">
+              <source type="image/webp" srcset="img/special-offer-desktop.webp 1x, img/special-offer-desktop@2x.webp 2x">
               <source media="(max-width: 767px)" srcset="img/special-offer-mobile.jpg 1x, img/special-offer-mobile@2x.jpg 2x">
               <source media="(max-width: 1199px)" srcset="img/special-offer-tablet.jpg 1x, img/special-offer-tablet@2x.jpg 2x">
               <img src="img/special-offer-desktop.jpg" srcset="img/special-offer-desktop@2x.jpg 2x" width="280" height="462" alt="Вид снизу девушки в синем спортивном топе и синих лосинах">
@@ -441,12 +456,12 @@
           </div>
           <div class="offers__overs offers__overs--free-month">
             <h3>Месяц бесплатно</h3>
-            <p>Приведи друга, получи абонемент в подарок</p>
+            <p>Приведи друга, получи абонемент в&nbsp;подарок</p>
             <a href="#">подробнее</a>
           </div>
           <div class="offers__overs offers__overs--discount20">
             <h3>Скидка 20%</h3>
-            <p>Корпоративный фитнес  с командой</p>
+            <p>Корпоративный фитнес с&nbsp;командой</p>
             <a href="#">подробнее</a>
           </div>
         </div>
@@ -461,37 +476,37 @@
             <div class="swiper-slide">
               <div class="reviews__item">
                 <picture>
-                  <!-- <source type="image/webp" media="(max-width: 767px)" srcset="img/review-avatar-mobile.webp 1x, img/review-avatar-mobile@2x.webp 2x">
-                  <source type="image/webp" srcset="img/review-avatar.webp 1x, img/review-avatar@2x.webp 2x"> -->
+                  <source type="image/webp" media="(max-width: 767px)" srcset="img/review-avatar-mobile.webp 1x, img/review-avatar-mobile@2x.webp 2x">
+                  <source type="image/webp" srcset="img/review-avatar.webp 1x, img/review-avatar@2x.webp 2x">
                   <source media="(max-width: 767px)" srcset="img/review-avatar-mobile.png 1x, img/review-avatar-mobile@2x.png 2x">
                   <img src="img/review-avatar.png" srcset="img/review-avatar@2x.png 2x" width="80" height="80" alt="Аватар девушки с черными волосами">
                 </picture>
                 <h3>Анна Орлова</h3>
-                <p>«Хожу в SuperClub уже больше года. Нравится, что в клубе всегда чисто, тренажеры обновляют, персонал дружелюбный. Зал просторный, даже в вечернее время нет очередей»</p>
+                <p>&laquo;Хожу в&nbsp;SuperClub уже больше года. Нравится, что в&nbsp;клубе всегда чисто, тренажеры обновляют, персонал дружелюбный. Зал просторный, даже в&nbsp;вечернее время нет очередей&raquo;</p>
               </div>
             </div>
             <div class="swiper-slide">
               <div class="reviews__item">
                 <picture>
-                  <!-- <source type="image/webp" media="(max-width: 767px)" srcset="img/review-avatar-mobile.webp 1x, img/review-avatar-mobile@2x.webp 2x">
-                  <source type="image/webp" srcset="img/review-avatar.webp 1x, img/review-avatar@2x.webp 2x"> -->
+                  <source type="image/webp" media="(max-width: 767px)" srcset="img/review-avatar-mobile.webp 1x, img/review-avatar-mobile@2x.webp 2x">
+                  <source type="image/webp" srcset="img/review-avatar.webp 1x, img/review-avatar@2x.webp 2x">
                   <source media="(max-width: 767px)" srcset="img/review-avatar-mobile.png 1x, img/review-avatar-mobile@2x.png 2x">
                   <img src="img/review-avatar.png" srcset="img/review-avatar@2x.png 2x" width="80" height="80" alt="Аватар девушки с черными волосами">
                 </picture>
                 <h3>Катя Орлова</h3>
-                <p>«Хожу в SuperClub уже больше года. Нравится, что в клубе всегда чисто, тренажеры обновляют, персонал дружелюбный. Зал просторный, даже в вечернее время нет очередей»</p>
-              </div>
+                <p>&laquo;Хожу в&nbsp;SuperClub уже больше года. Нравится, что в&nbsp;клубе всегда чисто, тренажеры обновляют, персонал дружелюбный. Зал просторный, даже в&nbsp;вечернее время нет очередей&raquo;</p>
+               </div>
             </div>
             <div class="swiper-slide">
               <div class="reviews__item">
                 <picture>
-                  <!-- <source type="image/webp" media="(max-width: 767px)" srcset="img/review-avatar-mobile.webp 1x, img/review-avatar-mobile@2x.webp 2x">
-                  <source type="image/webp" srcset="img/review-avatar.webp 1x, img/review-avatar@2x.webp 2x"> -->
+                  <source type="image/webp" media="(max-width: 767px)" srcset="img/review-avatar-mobile.webp 1x, img/review-avatar-mobile@2x.webp 2x">
+                  <source type="image/webp" srcset="img/review-avatar.webp 1x, img/review-avatar@2x.webp 2x">
                   <source media="(max-width: 767px)" srcset="img/review-avatar-mobile.png 1x, img/review-avatar-mobile@2x.png 2x">
                   <img src="img/review-avatar.png" srcset="img/review-avatar@2x.png 2x" width="80" height="80" alt="Аватар девушки с черными волосами">
                 </picture>
                 <h3>Маша Орлова</h3>
-                <p>«Хожу в SuperClub уже больше года. Нравится, что в клубе всегда чисто, тренажеры обновляют, персонал дружелюбный. Зал просторный, даже в вечернее время нет очередей»</p>
+                <p>&laquo;Хожу в&nbsp;SuperClub уже больше года. Нравится, что в&nbsp;клубе всегда чисто, тренажеры обновляют, персонал дружелюбный. Зал просторный, даже в&nbsp;вечернее время нет очередей&raquo;</p>
               </div>
             </div>
           </div>
@@ -535,11 +550,11 @@
               <ul class="contacts__list contacts__list--1">
                 <li class="contacts__item">
                   <h3>Адрес:</h3>
-                  <p>г. Омск, ул. 60 лет Октября, 7</p>
+                  <p>г. Омск, ул.&nbsp;60&nbsp;лет Октября, 7</p>
                 </li>
                 <li class="contacts__item">
                   <h3>График работы:</h3>
-                  <p>Пн-Вс: с 8:00 до 22:00</p>
+                  <p>Пн-Вс: с&nbsp;8:00 до&nbsp;22:00</p>
                 </li>
               </ul>
               <ul class="contacts__list contacts__list--2">

@@ -844,7 +844,7 @@ a[href^="tel:"]:hover {
 
 .page-footer__wrapper {
   margin: 0 auto;
-  padding: 44px 0;
+  padding: 44px 0 40px;
   width: 1160px;
   display: -ms-grid;
   display: grid;
@@ -859,7 +859,7 @@ a[href^="tel:"]:hover {
 }
 
 .page-footer__container {
-  margin: -3px 0 0 20px;
+  margin: -3px 0 0 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -903,6 +903,11 @@ a[href^="tel:"]:hover {
   font-size: 14px;
   line-height: 16px;
   color: #ffffff;
+  cursor: pointer;
+}
+
+.page-footer__item a:hover {
+  opacity: 0.5;
 }
 
 .page-footer .page-footer__social {
@@ -963,10 +968,35 @@ a[href^="tel:"]:hover {
   margin-top: 9px;
 }
 
-.gym iframe {
+.gym__wrapper {
   position: absolute;
+  width: 364px;
+  height: 228px;
   bottom: 120px;
   right: 359px;
+}
+
+.gym__start-player {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  width: 100px;
+  height: 100px;
+  background-image: url("../../img/gym-button-desktop.png");
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.gym__start-player:hover {
+  opacity: 0.5;
+}
+
+.gym__start-player--none {
+  display: none;
 }
 
 .subscription {
@@ -1092,7 +1122,7 @@ a[href^="tel:"]:hover {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   background-color: #ffffff;
-  border: 7px solid transparent;
+  border: 7px solid #ffffff;
 }
 
 .subscription__content-item:hover {
@@ -1781,7 +1811,7 @@ a[href^="tel:"]:hover {
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
-  border: 7px solid transparent;
+  border: 7px solid #ffffff;
   -o-border-image: -o-linear-gradient(100deg, #00359f, #d10a42);
   border-image: linear-gradient(-10deg, #00359f, #d10a42);
   border-image-slice: 1;
@@ -2040,6 +2070,7 @@ a[href^="tel:"]:hover {
   color: #ffffff;
   border: 3px solid #ffffff;
   background-color: #102654;
+  cursor: pointer;
 }
 
 .form__button:hover {
@@ -2148,6 +2179,11 @@ a[href^="tel:"]:hover {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  cursor: pointer;
+}
+
+.social__item a:hover {
+  opacity: 0.5;
 }
 
 /* @media (hover: hover), screen and (min-width: 0\0) {
@@ -2304,7 +2340,7 @@ a[href^="tel:"]:hover {
     margin-top: 44px;
   }
 
-  .gym iframe {
+  .gym__wrapper {
     bottom: 16px;
     right: 50%;
     left: 50%;
@@ -2313,6 +2349,12 @@ a[href^="tel:"]:hover {
     transform: translate(-50%, -50%);
     width: 266px;
     height: 167px;
+  }
+
+  .gym__start-player {
+    width: 73px;
+    height: 73px;
+    background-size: cover;
   }
 
   .subscription::after {
@@ -2895,11 +2937,15 @@ a[href^="tel:"]:hover {
     margin-top: 34px;
   }
 
-  .gym iframe {
+  .gym__wrapper {
     position: relative;
     margin-top: 124px;
     bottom: auto;
     width: 100%;
+  }
+
+  .gym__wrapper video {
+    margin: 0 auto;
   }
 
   .subscription::after {

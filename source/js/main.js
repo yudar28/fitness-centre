@@ -4,6 +4,7 @@ import {addSmoothScroll} from './modules/modals/smoth-scroll';
 import {onClickTab} from './modules/modals/tabs';
 import {swiperCoaches} from './modules/modals/swiper-coaches';
 import {swiperReviews} from './modules/modals/swiper-reviews';
+import {playVideo} from './modules/modals/video';
 
 // ---------------------------------
 
@@ -21,6 +22,8 @@ onClickTab();
 swiperCoaches();
 
 swiperReviews();
+
+playVideo();
 
 
 // ---------------------------------
