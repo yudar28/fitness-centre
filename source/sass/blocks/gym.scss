@@ -144,8 +144,17 @@
 }
 
 .gym__wrapper video {
+  width: 364px;
+  height: 228px;
+
+  @media (max-width: 1199px) {
+    width: 266px;
+    height: 167px;
+  }
+
   @media (max-width: 767px) {
     margin: 0 auto;
+    width: 100%;
   }
 }
 

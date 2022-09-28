@@ -976,6 +976,11 @@ a[href^="tel:"]:hover {
   right: 359px;
 }
 
+.gym__wrapper video {
+  width: 364px;
+  height: 228px;
+}
+
 .gym__start-player {
   position: absolute;
   top: 50%;
@@ -1241,7 +1246,7 @@ a[href^="tel:"]:hover {
   letter-spacing: 0.03em;
 }
 
-.promo__container h3 + p {
+.promo__container p:first-of-type {
   -ms-grid-row: 3;
   -ms-grid-column: 1;
   -ms-grid-column-span: 3;
@@ -1474,6 +1479,26 @@ a[href^="tel:"]:hover {
   border-radius: 50%;
 }
 
+.coaches__btn {
+  top: calc(50% - 10px);
+  cursor: pointer;
+}
+
+.coaches__btn::after {
+  display: none;
+}
+
+.coaches__btn--prev {
+  left: -62px;
+}
+
+.coaches__btn--next {
+  -webkit-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  transform: rotate(180deg);
+  right: -62px;
+}
+
 .swiper {
   width: 100%;
   height: 100%;
@@ -1493,28 +1518,6 @@ a[href^="tel:"]:hover {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-}
-
-.coaches .swiper-button-prev,
-.coaches .swiper-button-next {
-  top: calc(50% - 10px);
-  cursor: pointer;
-}
-
-.coaches .swiper-button-prev::after,
-.coaches .swiper-button-next::after {
-  display: none;
-}
-
-.coaches .swiper-button-prev {
-  left: -62px;
-}
-
-.coaches .swiper-button-next {
-  -webkit-transform: rotate(180deg);
-  -ms-transform: rotate(180deg);
-  transform: rotate(180deg);
-  right: -62px;
 }
 
 .advantages {
@@ -2210,11 +2213,11 @@ a[href^="tel:"]:hover {
     width: 90%;
   }
 
-  .coaches .swiper-button-prev {
+  .coaches__btn--prev {
     left: -42px;
   }
 
-  .coaches .swiper-button-next {
+  .coaches__btn--next {
     right: -42px;
   }
 }
@@ -2351,6 +2354,11 @@ a[href^="tel:"]:hover {
     height: 167px;
   }
 
+  .gym__wrapper video {
+    width: 266px;
+    height: 167px;
+  }
+
   .gym__start-player {
     width: 73px;
     height: 73px;
@@ -2430,7 +2438,7 @@ a[href^="tel:"]:hover {
     line-height: 52px;
   }
 
-  .promo__container h3 + p {
+  .promo__container p:first-of-type {
     top: -15px;
     -ms-grid-column-align: center;
     justify-self: center;
@@ -2481,16 +2489,15 @@ a[href^="tel:"]:hover {
     height: 294px;
   }
 
-  .coaches .swiper-button-prev,
-  .coaches .swiper-button-next {
+  .coaches__btn {
     top: calc(50% - 9px);
   }
 
-  .coaches .swiper-button-prev {
+  .coaches__btn--prev {
     left: -62px;
   }
 
-  .coaches .swiper-button-next {
+  .coaches__btn--next {
     right: -62px;
   }
 
@@ -2946,6 +2953,7 @@ a[href^="tel:"]:hover {
 
   .gym__wrapper video {
     margin: 0 auto;
+    width: 100%;
   }
 
   .subscription::after {
@@ -3025,7 +3033,7 @@ a[href^="tel:"]:hover {
     min-height: 292px;
   }
 
-  .promo__container h3 + p {
+  .promo__container p:first-of-type {
     top: -1px;
   }
 
@@ -3068,18 +3076,17 @@ a[href^="tel:"]:hover {
     padding: 0 30px 0 34px;
   }
 
-  .coaches .swiper-button-prev,
-  .coaches .swiper-button-next {
+  .coaches__btn {
     width: 10px;
     height: 19px;
     top: calc(50% + 25px);
   }
 
-  .coaches .swiper-button-prev {
+  .coaches__btn--prev {
     left: 0;
   }
 
-  .coaches .swiper-button-next {
+  .coaches__btn--next {
     right: 0;
   }
 

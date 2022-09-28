@@ -158,3 +158,57 @@
     border-radius: 50%;
   }
 }
+
+.coaches__btn {
+  &::after {
+    display: none;
+  }
+
+  top: calc(50% - 10px);
+
+  cursor: pointer;
+
+  @media (max-width: 1199px) {
+    top: calc(50% - 9px);
+  }
+
+  @media (max-width: 767px) {
+    width: 10px;
+    height: 19px;
+
+    top: calc(50% + 25px);
+  }
+
+  &--prev {
+    left: -62px;
+
+    @media (max-width: 1279px) {
+      left: -42px;
+    }
+
+    @media (max-width: 1199px) {
+      left: -62px;
+    }
+
+    @media (max-width: 767px) {
+      left: 0;
+    }
+  }
+
+  &--next {
+    transform: rotate(180deg);
+    right: -62px;
+
+    @media (max-width: 1279px) {
+      right: -42px;
+    }
+
+    @media (max-width: 1199px) {
+      right: -62px;
+    }
+
+    @media (max-width: 767px) {
+      right: 0;
+    }
+  }
+}

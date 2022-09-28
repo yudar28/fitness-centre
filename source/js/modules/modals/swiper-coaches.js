@@ -1,4 +1,5 @@
 const swiperCoaches = () => {
+  // eslint-disable-next-line no-undef
   const swiper = new Swiper('.coaches__swiper', {
     spaceBetween: 0,
     loop: true,
