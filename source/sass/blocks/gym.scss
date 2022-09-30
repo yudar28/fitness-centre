@@ -122,8 +122,11 @@
   position: absolute;
   width: 364px;
   height: 228px;
-  bottom: 120px;
   right: 359px;
+
+  @media (min-width: 1200px) {
+    top: 410px;
+  }
 
   @media (max-width: 1199px) {
     bottom: 16px;
@@ -166,11 +169,19 @@
 
   width: 100px;
   height: 100px;
-  background-image: url("../../img/gym-button-desktop.png");
+  background-image: url("../img/gym-button-desktop.png");
   background-color: transparent;
+  background-size: cover;
+  background-repeat: no-repeat;
   border: none;
 
   cursor: pointer;
+
+  @media (min-width: 1200px) {
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/gym-button-desktop@2x.png");
+    }
+  }
 
   &:hover {
     opacity: 0.5;

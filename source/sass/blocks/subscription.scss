@@ -10,19 +10,19 @@
     bottom: -150px;
     width: 287px;
     height: 494px;
-    background-image: url("../../img/plates-desktop.png");
+    background-image: url("../img/plates-desktop.png");
     background-repeat: no-repeat;
     background-size: cover;
     z-index: -1;
 
     @media (min-width: 1200px) {
       @media (min-resolution: 2dppx) {
-        background-image: url("../../img/plates-desktop@2x.png");
+        background-image: url("../img/plates-desktop@2x.png");
       }
     }
 
     @media (max-width: 1199px) {
-      background-image: url("../../img/plates-tablet.png");
+      background-image: url("../img/plates-tablet.png");
       background-position: center;
       background-size: cover;
       width: 347px;
@@ -30,7 +30,7 @@
       bottom: -125px;
 
       @media (min-resolution: 2dppx) {
-        background-image: url("../../img/plates-tablet@2x.png");
+        background-image: url("../img/plates-tablet@2x.png");
       }
     }
 
@@ -237,6 +237,7 @@
   line-height: 150px;
   color: #e8e8e8;
   opacity: 0.48;
+  user-select: none;
 
   @media (max-width: 767px) {
     font-size: 80px;
@@ -294,6 +295,7 @@
 
   border: 2px solid #102654;
   cursor: pointer;
+  user-select: none;
 
   &:hover {
     opacity: 0.5;

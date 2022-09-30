@@ -148,6 +148,7 @@
   color: #ffffff;
   letter-spacing: 0.05em;
   cursor: pointer;
+  user-select: none;
 
   &:hover {
     opacity: 0.5;

@@ -120,13 +120,15 @@
 
   cursor: pointer;
 
-  top: calc(50% + 25px);
+  // top: calc(50% + 25px);
+  top: 171px;
 
   @media (max-width: 767px) {
     width: 10px;
     height: 19px;
 
-    top: calc(50% + 33px);
+    // top: calc(50% + 33px);
+    top: 222px;
   }
 }
 

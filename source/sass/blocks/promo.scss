@@ -21,6 +21,8 @@
 }
 
 .promo img {
+  height: 100%;
+
   @media (max-width: 767px) {
     min-height: 292px;
   }
@@ -66,7 +68,7 @@
   }
 }
 
-.promo__container p:first-of-type {
+.promo__description {
   grid-area: des;
   position: relative;
   top: -20px;
@@ -79,6 +81,7 @@
 
   @media (max-width: 767px) {
     top: -1px;
+    justify-self: start;
   }
 }
 
@@ -201,6 +204,7 @@
   text-align: center;
 
   cursor: pointer;
+  user-select: none;
   border: 4px solid #ffffff;
 
   &:hover {

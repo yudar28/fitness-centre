@@ -738,6 +738,10 @@ button,
   color: #ffffff;
   letter-spacing: 0.05em;
   cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
 .basic__btn:hover {
@@ -813,6 +817,18 @@ button,
   -webkit-box-align: start;
   -ms-flex-align: start;
   align-items: flex-start;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+.page-header__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
 }
 
 a[href^="tel:"] {
@@ -822,6 +838,8 @@ a[href^="tel:"] {
   padding: 10px 20px 0;
   margin-right: -20px;
   margin-top: -10px;
+  margin-bottom: 5px;
+  display: block;
   font-family: "Bebas Neue", "Arial", sans-serif;
   font-weight: 700;
   font-size: 26px;
@@ -858,8 +876,10 @@ a[href^="tel:"]:hover {
   align-items: start;
 }
 
-.page-footer__container {
-  margin: -3px 0 0 0;
+.page-footer__list {
+  list-style-type: none;
+  margin: -4px 0 0 20px;
+  padding: 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -874,27 +894,12 @@ a[href^="tel:"]:hover {
   justify-content: center;
 }
 
-.page-footer__list {
-  margin: 0;
-  padding: 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
-  list-style-type: none;
-}
-
 .page-footer__item {
   margin-right: 20px;
 }
 
-.page-footer__list--2 .page-footer__item:last-child {
-  margin-right: 0;
+.page-footer__item--empty {
+  display: none;
 }
 
 .page-footer__item a {
@@ -972,7 +977,6 @@ a[href^="tel:"]:hover {
   position: absolute;
   width: 364px;
   height: 228px;
-  bottom: 120px;
   right: 359px;
 }
 
@@ -990,8 +994,10 @@ a[href^="tel:"]:hover {
   transform: translate(-50%, -50%);
   width: 100px;
   height: 100px;
-  background-image: url("../../img/gym-button-desktop.png");
+  background-image: url("../img/gym-button-desktop.png");
   background-color: transparent;
+  background-size: cover;
+  background-repeat: no-repeat;
   border: none;
   cursor: pointer;
 }
@@ -1017,7 +1023,7 @@ a[href^="tel:"]:hover {
   bottom: -150px;
   width: 287px;
   height: 494px;
-  background-image: url("../../img/plates-desktop.png");
+  background-image: url("../img/plates-desktop.png");
   background-repeat: no-repeat;
   background-size: cover;
   z-index: -1;
@@ -1157,6 +1163,10 @@ a[href^="tel:"]:hover {
   line-height: 150px;
   color: #e8e8e8;
   opacity: 0.48;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
 .subscription__content-item b {
@@ -1194,6 +1204,10 @@ a[href^="tel:"]:hover {
   color: #102654;
   border: 2px solid #102654;
   cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
 .subscription__content-item a:hover {
@@ -1217,6 +1231,10 @@ a[href^="tel:"]:hover {
   display: grid;
   -ms-grid-columns: 500px 660px;
   grid-template-columns: 500px 660px;
+}
+
+.promo img {
+  height: 100%;
 }
 
 .promo__container {
@@ -1246,7 +1264,7 @@ a[href^="tel:"]:hover {
   letter-spacing: 0.03em;
 }
 
-.promo__container p:first-of-type {
+.promo__description {
   -ms-grid-row: 3;
   -ms-grid-column: 1;
   -ms-grid-column-span: 3;
@@ -1372,6 +1390,10 @@ a[href^="tel:"]:hover {
   color: #ffffff;
   text-align: center;
   cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
   border: 4px solid #ffffff;
 }
 
@@ -1418,7 +1440,8 @@ a[href^="tel:"]:hover {
 
 .coaches__item:hover h3,
 .coaches__item:focus h3 {
-  bottom: 202px;
+  bottom: auto;
+  top: 65px;
 }
 
 .coaches__container {
@@ -1527,7 +1550,7 @@ a[href^="tel:"]:hover {
 
 .advantages__wrapper {
   width: 1040px;
-  padding: 120px 0;
+  padding: 120px 0 34px;
   margin: 0 auto;
 }
 
@@ -1559,6 +1582,8 @@ a[href^="tel:"]:hover {
   display: grid;
   -ms-grid-columns: auto 30px auto;
   grid-template-columns: auto auto;
+  -ms-grid-rows: 1fr 4fr;
+  grid-template-rows: 1fr 4fr;
   -webkit-column-gap: 30px;
   -moz-column-gap: 30px;
   column-gap: 30px;
@@ -1589,7 +1614,8 @@ a[href^="tel:"]:hover {
   -ms-grid-column: 3;
   grid-area: trainers;
   margin-top: 6px;
-  padding: 0 34px 58px;
+  padding: 0 34px 59px;
+  align-self: flex-start;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1612,6 +1638,7 @@ a[href^="tel:"]:hover {
   -ms-grid-row-align: end;
   align-self: end;
   padding-left: 20px;
+  margin-top: 69px;
 }
 
 .advantages__item--experience {
@@ -1671,6 +1698,7 @@ a[href^="tel:"]:hover {
   -ms-grid-column: 3;
   grid-area: description;
   margin: 0;
+  margin-top: 6px;
   font-weight: 300;
   font-size: 16px;
   line-height: 140%;
@@ -1701,11 +1729,11 @@ a[href^="tel:"]:hover {
 }
 
 .advantages__item--parking p {
-  margin-top: -59px;
+  margin-top: 6px;
 }
 
 .advantages__item--acreage p {
-  margin-top: -59px;
+  margin-top: 6px;
 }
 
 .offers {
@@ -1764,6 +1792,10 @@ a[href^="tel:"]:hover {
   color: #ffffff;
 }
 
+.offers__container img {
+  height: 100%;
+}
+
 .offers__info small {
   font-weight: 700;
   font-size: 28px;
@@ -1807,6 +1839,7 @@ a[href^="tel:"]:hover {
 
 .offers__overs {
   padding: 19px 28px 28px;
+  min-height: 211px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1851,9 +1884,15 @@ a[href^="tel:"]:hover {
 
 .offers__overs a {
   margin-top: auto;
+  padding-top: 10px;
   font-size: 12px;
   line-height: 14px;
   color: #1c3374;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
 .reviews {
@@ -1930,7 +1969,7 @@ a[href^="tel:"]:hover {
 .reviews .swiper-button-prev,
 .reviews .swiper-button-next {
   cursor: pointer;
-  top: calc(50% + 25px);
+  top: 171px;
 }
 
 .reviews .swiper-button-prev::after,
@@ -2074,6 +2113,10 @@ a[href^="tel:"]:hover {
   border: 3px solid #ffffff;
   background-color: #102654;
   cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
 .form__button:hover {
@@ -2110,11 +2153,13 @@ a[href^="tel:"]:hover {
   position: relative;
   margin: 0;
   padding: 0;
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 1fr;
-  grid-template-columns: 1fr;
-  row-gap: 14px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
   list-style-type: none;
 }
 
@@ -2126,6 +2171,10 @@ a[href^="tel:"]:hover {
   width: 1px;
   height: 87%;
   background-color: #74819c;
+}
+
+.contacts__item:not(:last-child) {
+  margin-bottom: 14px;
 }
 
 .contacts__item h3 {
@@ -2143,6 +2192,10 @@ a[href^="tel:"]:hover {
   font-size: 14px;
   line-height: 27px;
   color: #102654;
+}
+
+.contacts__item p {
+  padding-right: 10px;
 }
 
 .contacts__item a[href^="tel:"] {
@@ -2196,9 +2249,19 @@ a[href^="tel:"]:hover {
   }
 } */
 
+@media (min-width: 1200px) {
+  .gym__wrapper {
+    top: 410px;
+  }
+}
+
 @media (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 1200px) and (-o-min-device-pixel-ratio: 2/1), (min-width: 1200px) and (min-resolution: 2dppx) {
+  .gym__start-player {
+    background-image: url("../img/gym-button-desktop@2x.png");
+  }
+
   .subscription::after {
-    background-image: url("../../img/plates-desktop@2x.png");
+    background-image: url("../img/plates-desktop@2x.png");
   }
 }
 
@@ -2211,6 +2274,15 @@ a[href^="tel:"]:hover {
 @media (max-width: 1279px) {
   .coaches {
     width: 90%;
+  }
+
+  .coaches__overflor {
+    height: 190px;
+  }
+
+  .coaches__description {
+    margin: 20px 0 0;
+    padding: 0 45px 0 45px;
   }
 
   .coaches__btn--prev {
@@ -2272,6 +2344,13 @@ a[href^="tel:"]:hover {
     padding-top: 40px;
   }
 
+  .page-header__list {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+  }
+
   .page-header__wrapper img {
     width: 80px;
   }
@@ -2286,8 +2365,8 @@ a[href^="tel:"]:hover {
     -webkit-column-gap: 15px;
     -moz-column-gap: 15px;
     column-gap: 15px;
-    -ms-grid-columns: 1fr 3.5fr 1fr;
-    grid-template-columns: 1fr 3.5fr 1fr;
+    -ms-grid-columns: 1fr 4fr 1fr;
+    grid-template-columns: 1fr 4fr 1fr;
   }
 
   .page-footer__wrapper img {
@@ -2295,8 +2374,8 @@ a[href^="tel:"]:hover {
     height: 18px;
   }
 
-  .page-footer__container {
-    margin-left: 0;
+  .page-footer__list {
+    margin: -4px 0 0 9px;
   }
 
   .page-footer__item {
@@ -2366,7 +2445,7 @@ a[href^="tel:"]:hover {
   }
 
   .subscription::after {
-    background-image: url("../../img/plates-tablet.png");
+    background-image: url("../img/plates-tablet.png");
     background-position: center;
     background-size: cover;
     width: 347px;
@@ -2438,7 +2517,7 @@ a[href^="tel:"]:hover {
     line-height: 52px;
   }
 
-  .promo__container p:first-of-type {
+  .promo__description {
     top: -15px;
     -ms-grid-column-align: center;
     justify-self: center;
@@ -2489,6 +2568,15 @@ a[href^="tel:"]:hover {
     height: 294px;
   }
 
+  .coaches__overflor {
+    height: 220px;
+  }
+
+  .coaches__description {
+    margin: 34px 0 0;
+    padding: 0 45px 0 55px;
+  }
+
   .coaches__btn {
     top: calc(50% - 9px);
   }
@@ -2503,7 +2591,7 @@ a[href^="tel:"]:hover {
 
   .advantages__wrapper {
     width: 88.28%;
-    padding: 100px 0;
+    padding: 100px 0 80px;
   }
 
   .advantages__wrapper h2 {
@@ -2515,11 +2603,14 @@ a[href^="tel:"]:hover {
     margin-top: 42px;
     -ms-grid-columns: 1fr 30px 1fr;
     grid-template-columns: 1fr 1fr;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: start;
     -webkit-column-gap: 30px;
     -moz-column-gap: 30px;
     column-gap: 30px;
-    row-gap: 43px;
-    -ms-grid-rows: auto 43px auto 43px auto;
+    row-gap: 30px;
+    -ms-grid-rows: auto 30px auto 30px auto;
     grid-template-areas: "acreage parking" "trainers trainers" "comfort experience";
   }
 
@@ -2527,6 +2618,8 @@ a[href^="tel:"]:hover {
     -webkit-column-gap: 19px;
     -moz-column-gap: 19px;
     column-gap: 19px;
+    -ms-grid-rows: 1fr 2fr;
+    grid-template-rows: 1fr 2fr;
   }
 
   .advantages__item--acreage {
@@ -2547,6 +2640,7 @@ a[href^="tel:"]:hover {
   .advantages__item--comfort {
     padding: 0;
     margin-right: -19px;
+    margin-top: 12px;
   }
 
   .advantages__item--acreage {
@@ -2588,6 +2682,10 @@ a[href^="tel:"]:hover {
     font-size: 20px;
   }
 
+  .advantages__item p {
+    margin-top: 0;
+  }
+
   .advantages__item--trainers b {
     margin-top: 57px;
   }
@@ -2619,7 +2717,7 @@ a[href^="tel:"]:hover {
 
   .offers {
     width: 88.28%;
-    padding: 93px 0 100px;
+    padding: 102px 0 100px;
   }
 
   .offers h2 {
@@ -2646,7 +2744,6 @@ a[href^="tel:"]:hover {
 
   .offers__container img {
     width: 399px;
-    height: 462px;
   }
 
   .offers__container {
@@ -2664,10 +2761,6 @@ a[href^="tel:"]:hover {
   .offers__overs--discount20 {
     -ms-grid-row: 3;
     -ms-grid-column: 3;
-  }
-
-  .offers__overs {
-    min-height: 211px;
   }
 
   .offers__overs--free-month p {
@@ -2753,12 +2846,12 @@ a[href^="tel:"]:hover {
     column-gap: 48px;
   }
 
-  .contacts__list {
-    row-gap: 20px;
-  }
-
   .contacts__list--1::after {
     height: 91%;
+  }
+
+  .contacts__item:not(:last-child) {
+    margin-bottom: 19px;
   }
 
   .contacts__item h3 {
@@ -2782,7 +2875,7 @@ a[href^="tel:"]:hover {
 
 @media (max-width: 1199px) and (-webkit-min-device-pixel-ratio: 2), (max-width: 1199px) and (-o-min-device-pixel-ratio: 2/1), (max-width: 1199px) and (min-resolution: 2dppx) {
   .subscription::after {
-    background-image: url("../../img/plates-tablet@2x.png");
+    background-image: url("../img/plates-tablet@2x.png");
   }
 }
 
@@ -2844,6 +2937,13 @@ a[href^="tel:"]:hover {
     padding-top: 20px;
   }
 
+  .page-header__list {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+
   .page-header__wrapper img {
     width: 68px;
   }
@@ -2873,31 +2973,14 @@ a[href^="tel:"]:hover {
     height: 15px;
   }
 
-  .page-footer__container {
-    width: 100%;
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-columns: 1fr 1fr;
-    grid-template-columns: 1fr 1fr;
-    -webkit-column-gap: 10px;
-    -moz-column-gap: 10px;
-    column-gap: 10px;
-  }
-
   .page-footer__list {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
-  }
-
-  .page-footer__list--1 {
-    margin-top: 23px;
-    margin-left: -10px;
-  }
-
-  .page-footer__list--2 {
-    margin-top: -17px;
+    margin: -20px 0 0 -5px;
+    width: 104%;
+    display: block;
+    -webkit-column-count: 2;
+    -moz-column-count: 2;
+    column-count: 2;
+    list-style-type: none;
   }
 
   .page-footer__item {
@@ -2905,7 +2988,13 @@ a[href^="tel:"]:hover {
     margin-bottom: 16px;
   }
 
+  .page-footer__item--empty {
+    display: block;
+    height: 24px;
+  }
+
   .page-footer__item a {
+    padding: 5px;
     font-size: 16px;
     line-height: 19px;
   }
@@ -3033,8 +3122,10 @@ a[href^="tel:"]:hover {
     min-height: 292px;
   }
 
-  .promo__container p:first-of-type {
+  .promo__description {
     top: -1px;
+    -ms-grid-column-align: start;
+    justify-self: start;
   }
 
   .promo__time {
@@ -3065,6 +3156,7 @@ a[href^="tel:"]:hover {
   .coaches__item:hover h3,
   .coaches__item:focus h3 {
     bottom: 192px;
+    top: auto;
   }
 
   .coaches__overflor {
@@ -3234,7 +3326,6 @@ a[href^="tel:"]:hover {
 
   .offers__container img {
     width: 100%;
-    height: auto;
   }
 
   .offers__info p {
@@ -3346,7 +3437,7 @@ a[href^="tel:"]:hover {
   .reviews .swiper-button-next {
     width: 10px;
     height: 19px;
-    top: calc(50% + 33px);
+    top: 222px;
   }
 
   .form__wrapper {
@@ -3392,6 +3483,10 @@ a[href^="tel:"]:hover {
 
   .contacts__list--2 {
     margin-top: 20px;
+  }
+
+  .contacts__item:not(:last-child) {
+    margin-bottom: 20px;
   }
 
   .contacts__item a[href^="tel:"] {

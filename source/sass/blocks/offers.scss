@@ -5,7 +5,7 @@
 
   @media (max-width: 1199px) {
     width: 88.28%;
-    padding: 93px 0 100px;
+    padding: 102px 0 100px;
   }
 
   @media (max-width: 767px) {
@@ -64,6 +64,7 @@
 
 .offers__container {
   grid-area: year;
+  // grid-row: 1/-1;
 
   display: flex;
   flex-direction: row;
@@ -100,14 +101,16 @@
 }
 
 .offers__container img {
+  height: 100%;
+
   @media (max-width: 1199px) {
     width: 399px;
-    height: 462px;
+    // height: 462px;
   }
 
   @media (max-width: 767px) {
     width: 100%;
-    height: auto;
+    // height: auto;
   }
 }
 
@@ -165,6 +168,7 @@
 
 .offers__overs {
   padding: 19px 28px 28px;
+  min-height: 211px;
 
   display: flex;
   flex-direction: column;
@@ -182,10 +186,6 @@
 
   &--discount20 {
     grid-area: discount;
-  }
-
-  @media (max-width: 1199px) {
-    min-height: 211px;
   }
 
   @media (max-width: 767px) {
@@ -226,8 +226,11 @@
 
 .offers__overs a {
   margin-top: auto;
+  padding-top: 10px;
 
   font-size: 12px;
   line-height: 14px;
   color: #1c3374;
+  cursor: pointer;
+  user-select: none;
 }

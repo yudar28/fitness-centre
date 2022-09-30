@@ -12,6 +12,7 @@
   flex-direction: row;
   justify-content: space-between;
   align-items: flex-start;
+  flex-wrap: wrap;
 
   @media (max-width: 1199px) {
     width: 88.28%;
@@ -21,6 +22,19 @@
   @media (max-width: 767px) {
     width: 90.63%;
     padding-top: 20px;
+  }
+}
+
+.page-header__list {
+  display: flex;
+  flex-direction: column;
+
+  @media (max-width: 1199px) {
+    flex-direction: row;
+  }
+
+  @media (max-width: 767px) {
+    flex-direction: column;
   }
 }
 
@@ -39,6 +53,9 @@ a[href^="tel:"] {
   padding: 10px 20px 0;
   margin-right: -20px;
   margin-top: -10px;
+  margin-bottom: 5px;
+
+  display: block;
 
   font-family: "Bebas Neue", "Arial", sans-serif;
   font-weight: 700;

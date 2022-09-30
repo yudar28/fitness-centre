@@ -11,6 +11,8 @@ const swiperReviews = () => {
       enabled: true,
       onlyInViewport: false,
     },
+
+    autoHeight: true,
   });
 
   // eslint-disable-next-line no-unused-expressions
