@@ -1180,6 +1180,7 @@ a[href^="tel:"]:hover {
   font-weight: 700;
   font-size: 60px;
   line-height: 90px;
+  color: #103aae;
 }
 
 .subscription__content-item b::after {
@@ -1856,13 +1857,13 @@ a[href^="tel:"]:hover {
   color: #1c3374;
 }
 
-.offers__overs--free-month {
+.offers__overs:first-of-type {
   -ms-grid-row: 1;
   -ms-grid-column: 3;
   grid-area: month;
 }
 
-.offers__overs--discount20 {
+.offers__overs:nth-child(2) {
   -ms-grid-row: 3;
   -ms-grid-column: 3;
   grid-area: discount;
@@ -2753,12 +2754,12 @@ a[href^="tel:"]:hover {
     -ms-grid-column-span: 3;
   }
 
-  .offers__overs--free-month {
+  .offers__overs:first-of-type {
     -ms-grid-row: 3;
     -ms-grid-column: 1;
   }
 
-  .offers__overs--discount20 {
+  .offers__overs:nth-child(2) {
     -ms-grid-row: 3;
     -ms-grid-column: 3;
   }
@@ -3345,12 +3346,12 @@ a[href^="tel:"]:hover {
     -ms-grid-column-span: 1;
   }
 
-  .offers__overs--free-month {
+  .offers__overs:first-of-type {
     -ms-grid-row: 2;
     -ms-grid-column: 1;
   }
 
-  .offers__overs--discount20 {
+  .offers__overs:nth-child(2) {
     -ms-grid-row: 3;
     -ms-grid-column: 1;
   }

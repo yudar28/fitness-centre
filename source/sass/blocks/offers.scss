@@ -180,11 +180,11 @@
 
   color: #1c3374;
 
-  &--free-month {
+  &:first-of-type {
     grid-area: month;
   }
 
-  &--discount20 {
+  &:nth-child(2) {
     grid-area: discount;
   }
 
